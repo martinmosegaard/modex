@@ -3,6 +3,8 @@ modex
 
 Tool to extract modules via MikMod library
 
+by neoman of Titan
+
 Installation
 ------------
 
