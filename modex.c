@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include <string.h>
 #include <unistd.h>
 #include <mikmod.h>
 #include <sndfile.h>
 #include <libgen.h>
 
-//extern signed short ** VC1_GetSamples();
-//extern signed short ** VC2_GetSamples();
+extern signed short ** VC1_GetSamples();
+extern signed short ** VC2_GetSamples();
 
 void usage(char * p_program)
 {
@@ -73,7 +74,7 @@ int extract(const char * p_filename)
 		
 		sf_close(sf);
 		
-		printf("%03d: %-20s (%06d nsmps [* = %p]) | %02d | %c | %s | %s\n", 
+		printf("%03d: %-40s (%06d nsmps [* = %p]) | %02d | %c | %s | %s\n", 
 			i, 
 			module->samples[i].samplename, 
 			(int)module->samples[i].length, 
