@@ -1,0 +1,25 @@
+--- playercode/virtch.c.old	2014-07-26 09:54:45.392695641 +0200
++++ playercode/virtch.c	2014-07-26 09:50:23.493665581 +0200
+@@ -1316,4 +1316,9 @@
+ 	return 0;
+ }
+ 
++MIKMODAPI SWORD ** VC1_GetSamples(void)
++{
++	return Samples;
++}
++
+ /* ex:set ts=4: */
+--- playercode/virtch2.c.old	2014-07-26 09:54:49.136681815 +0200
++++ playercode/virtch2.c	2014-07-26 09:50:31.997633997 +0200
+@@ -1316,4 +1316,10 @@
+ 	return 0;
+ }
+ 
++MIKMODAPI SWORD ** VC2_GetSamples()
++{
++	return Samples;
++}
++
++
+ /* ex:set ts=4: */
